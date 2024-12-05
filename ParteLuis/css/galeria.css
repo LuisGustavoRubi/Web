@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C2FFC7; /* Fondo suave */
+    color: #526E48; /* Texto general */
+}
+
+.gallery-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #9EDF9C; /* Fondo de la sección */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h1 {
+    font-size: 2.5em;
+    color: #62825D;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1.2em;
+    color: #526E48;
+    margin-bottom: 20px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo {
+    background-color: #fff; /* Fondo blanco para contraste */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.photo p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #526E48;
+}
+
+.photo:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .section-header h1 {
+        font-size: 2em; /* Títulos más pequeños */
+    }
+
+    .photo {
+        width: 45%; /* Ajusta el tamaño de las tarjetas */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-section {
+        padding: 10px; /* Reduce los márgenes */
+    }
+
+    .photo {
+        width: 100%; /* Las tarjetas ocupan todo el ancho */
+    }
+
+    .section-header h1 {
+        font-size: 1.8em; /* Títulos más pequeños */
+    }
+
+    .section-header p {
+        font-size: 1em; /* Texto más pequeño */
+    }
+
+    .photo p {
+        font-size: 0.9em; /* Texto más pequeño */
+    }
+}
