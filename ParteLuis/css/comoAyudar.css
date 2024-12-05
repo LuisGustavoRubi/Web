@@ -1,0 +1,113 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C2FFC7; /* Fondo suave */
+    color: #526E48; /* Texto general */
+}
+
+.how-to-help {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9EDF9C; /* Fondo para la sección */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-header h1 {
+    font-size: 2.5em;
+    color: #62825D;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1.2em;
+    color: #526E48;
+    margin-bottom: 20px;
+}
+
+.help-options {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    gap: 20px;
+    justify-content: center;
+}
+
+.help-option {
+    background-color: #fff; /* Fondo blanco para contraste */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.help-option:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.help-option h2 {
+    font-size: 1.8em;
+    color: #526E48;
+    margin-bottom: 10px;
+}
+
+.help-option p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #62825D;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #526E48; /* Fondo del botón */
+    color: #fff; /* Texto blanco */
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #62825D; /* Cambio de color al pasar el mouse */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .section-header h1 {
+        font-size: 2em; /* Títulos más pequeños */
+    }
+
+    .help-option {
+        width: 45%; /* Ajusta el tamaño de las tarjetas */
+    }
+}
+
+@media (max-width: 480px) {
+    .how-to-help {
+        padding: 10px; /* Reduce los márgenes */
+    }
+
+    .help-option {
+        width: 100%; /* Las tarjetas ocupan todo el ancho */
+    }
+
+    .help-option h2 {
+        font-size: 1.5em; /* Títulos más pequeños */
+    }
+
+    .help-option p {
+        font-size: 0.9em; /* Texto más pequeño */
+    }
+
+    .btn {
+        padding: 8px 12px; /* Botones más pequeños */
+    }
+}
