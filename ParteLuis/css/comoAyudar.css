@@ -111,3 +111,26 @@ body {
         padding: 8px 12px; /* Botones más pequeños */
     }
 }
+.back-to-home {
+    text-align: center; /* Centra el botón */
+    margin-top: 30px;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #62825D; /* Color verde similar */
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra similar a las fotos */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.btn-home:hover {
+    background-color: #526E48; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-3px); /* Efecto sutil de elevación */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
+}
