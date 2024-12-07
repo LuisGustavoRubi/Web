@@ -130,3 +130,49 @@ section.visible, .card.visible, .hero-content.visible {
     transform: translateY(-3px); /* Efecto de elevación */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más intensa */
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú vertical */
+        gap: 0.5rem;
+    }
+
+    .hero-content {
+        font-size: 0.9rem; /* Reducir el tamaño del texto */
+        padding: 0.5rem;
+    }
+
+    .servicios .card {
+        width: 90%; /* Las tarjetas ocupan casi todo el ancho */
+        margin: 10px auto; /* Centrado */
+    }
+
+    .btn, .btn-home {
+        font-size: 0.9em; /* Tamaño más pequeño para los botones */
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+    }
+
+    .servicios .card {
+        width: 45%; /* Tarjetas más grandes */
+        margin: 1rem auto; /* Centrado */
+    }
+
+    .hero-content {
+        padding: 1rem;
+        font-size: 1rem; /* Ajuste del texto */
+    }
+
+    .btn, .btn-home {
+        font-size: 1em; /* Botones ligeramente más grandes */
+    }
+}
